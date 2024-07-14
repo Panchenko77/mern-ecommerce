@@ -26,6 +26,7 @@ setupDB();
 require('./config/passport')(app);
 app.use(routes);
 
+
 const server = app.listen(port, () => {
   console.log(
     `${chalk.green('✓')} ${chalk.blue(
